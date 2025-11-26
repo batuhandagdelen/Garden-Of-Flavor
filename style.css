@@ -1,0 +1,90 @@
+.desc {
+  max-width: 650px;
+}
+
+/* *Categories */
+#category-buttons label {
+  border: 2px solid #43a047;
+  border-radius: 25px;
+  padding: 10px 26px;
+  font-weight: 500;
+  font-size: 17px;
+  color: #388e3c;
+  background-color: #e8f5e9;
+  cursor: pointer;
+  box-shadow: 0 1px 6px rgba(67, 160, 71, 0.05);
+  transition: all 0.3s ease;
+}
+
+#category-buttons label:hover {
+  background-color: #43a047;
+  color: #ffffff;
+}
+
+#category-buttons input {
+  display: none;
+}
+
+#category-buttons div:has(input:checked) label {
+  background: linear-gradient(90deg, #43a047 60%, #8bc34a 100%);
+  color: #ffffff;
+  border-color: #388e3c;
+  box-shadow: 0 2px 12px rgba(67, 160, 71, 0.11);
+}
+
+/* *Menü Card */
+
+.menu-card {
+  border: none;
+  border-radius: 18px;
+  background-color: #f5fff7;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.menu-card:hover {
+  transform: translateY(-7px);
+}
+
+.menu-card img {
+  height: 250px;
+  object-fit: cover;
+}
+
+.menu-card-badge {
+  font-size: 1rem;
+  background: linear-gradient(90deg, #43a047 60%, #8bc34a 100%);
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(67, 160, 71, 0.15);
+}
+
+.menu-card-price {
+  font-size: 1rem;
+  color: #388e3c;
+  border: 1.2px solid #43a047;
+  box-shadow: 0 1px 6px;
+  border-radius: 16px;
+}
+
+/* *Blogs */
+.blog-card {
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-7px) scale(1.015);
+}
+
+.blog-card img {
+  height: 230px !important;
+  object-fit: cover;
+}
+
+/* *Detail Page */
+
+.detail-img {
+  min-height: 320px !important;
+  max-height: 420px !important;
+  object-fit: cover;
+}
